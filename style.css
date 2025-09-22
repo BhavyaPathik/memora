@@ -90,7 +90,7 @@ nav {
 .searchbar {
     height: 38px;
     width: 400px; 
-    margin-left: autopx;
+    margin-left: auto;
     display: flex;
     align-items: center;
     border: 2px solid #333;
@@ -595,13 +595,16 @@ section {
     border-radius: 0px;
     transform: scale(1.1) translateY(-2px);
 }
+.browsewrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .browsecontainer {
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    gap: 30px;
     margin-top: 50px;
-    margin-left: 80px;
-    margin-right: 50px;
+    gap: 40px;
 }
 .browsecontent {
     margin-top: 20px;
@@ -697,7 +700,7 @@ section {
     height: 40px;
     width: 40px;
     margin-top: 8px;
-    background-color: #000000;
+    background-color: #ffffff;
     border: 2px solid black;
     background-image: url(download.svg);
     background-size: 27px 27px;
@@ -713,20 +716,6 @@ section {
 }
 .browsecontent:hover .download {
     opacity: 1;
-}
-.share{
-    height: 40px;
-    width: 40px;
-    margin-top: 8px;
-    background-color: white;
-    border: 2px solid black;
-}
-.download{
-    height: 40px;
-    width: 40px;
-    margin-top: 8px;
-    background-color: white;
-    border: 2px solid black;
 }
 .content2 {
     height: 220px;
@@ -780,7 +769,7 @@ section {
     width: 100%;
     background: url(content4.jpg) 0 10%/cover no-repeat;
     display: flex;
-    justify-content: flex-startr;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .herotag4 {
